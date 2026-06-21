@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Your Name — Computer Science ePortfolio</title>
+<meta name="description" content="Computer Science capstone ePortfolio showcasing software design, algorithms, and database work." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">/your-name</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle"><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#code-review">Code Review</a></li>
+      <li><a href="#artifacts">Artifacts</a></li>
+      <li><a href="self-assessment.html">Self-Assessment</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Computer Science ePortfolio</span>
+    <h1>Your Name</h1>
+    <p class="lede">
+      A collection of work from my Computer Science program, showing how I design software,
+      reason about algorithms, and build data-driven systems — and how that work has evolved
+      through enhancement and reflection.
+    </p>
+    <div class="hero-links">
+      <a class="btn btn-primary" href="self-assessment.html">Read the self-assessment</a>
+      <a class="btn" href="#artifacts">View artifacts</a>
+      <a class="btn" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub profile</a>
+    </div>
+  </div>
+</header>
+
+<div class="wayfind">
+  <a href="artifact-sde.html">
+    <span class="eyebrow tag">01 / SDE</span>
+    <span class="label">Software Design &amp; Engineering →</span>
+  </a>
+  <a href="artifact-algo.html">
+    <span class="eyebrow tag">02 / ALGO</span>
+    <span class="label">Algorithms &amp; Data Structures →</span>
+  </a>
+  <a href="artifact-db.html">
+    <span class="eyebrow tag">03 / DB</span>
+    <span class="label">Databases →</span>
+  </a>
+</div>
+
+<section class="section" id="about">
+  <div class="wrap two-col">
+    <div>
+      <h2>About this portfolio</h2>
+      <p>
+        This site documents my growth across the Computer Science program and serves as the
+        professional record I'll point employers to. It includes a code review of an early
+        project, three artifacts I revisited and enhanced, and a self-assessment that ties
+        the work back to the program's learning outcomes and my own career goals.
+      </p>
+      <p>
+        <em>Replace this paragraph with a short bio: your focus area, what kind of engineer
+        you want to be, and one or two things you're proud of from the program.</em>
+      </p>
+    </div>
+    <ul class="outcomes">
+      <li><strong>Outcome 1</strong>Design and evaluate computing solutions using algorithmic principles and well-established standards.</li>
+      <li><strong>Outcome 2</strong>Communicate technical information clearly to both technical and non-technical audiences.</li>
+      <li><strong>Outcome 3</strong>Use well-founded, innovative techniques and tools to implement secure, industry-standard solutions.</li>
+      <li><strong>Outcome 4</strong>Collaborate effectively within a team to deliver value-driven software.</li>
+      <li><strong>Outcome 5</strong>Develop a security mindset that anticipates and mitigates risk throughout the development lifecycle.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="code-review">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Code review</h2>
+      <span class="section-note">Walkthrough of an original artifact before enhancement</span>
+    </div>
+    <p class="content-block">
+      Before enhancing any artifact, I reviewed the original code to identify weaknesses in
+      structure, logic, and security — and to plan the improvements documented on each
+      artifact page below. <em>Replace this with 2–3 sentences on what the review covered,
+      and link or embed the video.</em>
+    </p>
+    <div class="placeholder" style="margin-top:20px;">VIDEO EMBED — replace with your code review recording</div>
+  </div>
+</section>
+
+<section class="section" id="artifacts">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Enhanced artifacts</h2>
+      <span class="section-note">Three artifacts, three categories</span>
+    </div>
+    <div class="artifact-grid">
+
+      <a class="card" href="artifact-sde.html">
+        <span class="corner-tab sde">SDE</span>
+        <h3>Software Design &amp; Engineering</h3>
+        <p>Replace with a one-line summary of the artifact and what you enhanced about its architecture or design.</p>
+        <span class="card-cta">View artifact →</span>
+      </a>
+
+      <a class="card" href="artifact-algo.html">
+        <span class="corner-tab algo">ALGO</span>
+        <h3>Algorithms &amp; Data Structures</h3>
+        <p>Replace with a one-line summary of the artifact and the algorithmic improvement made.</p>
+        <span class="card-cta">View artifact →</span>
+      </a>
+
+      <a class="card" href="artifact-db.html">
+        <span class="corner-tab db">DB</span>
+        <h3>Databases</h3>
+        <p>Replace with a one-line summary of the artifact and the data layer improvement made.</p>
+        <span class="card-cta">View artifact →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span id="year"></span> Your Name</span>
+    <span><a href="mailto:you@example.com">you@example.com</a> · <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>
