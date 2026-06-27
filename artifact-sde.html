@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Software Design &amp; Engineering — Your Name</title>
+<title>Software Design &amp; Engineering — Diego Alvarez</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 
 <nav class="site-nav">
   <div class="wrap">
-    <a class="brand" href="index.html">/your-name</a>
+    <a class="brand" href="index.html">/Diego Alvarez</a>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle"><span></span></button>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html#about">About</a></li>
@@ -37,22 +37,15 @@
 
     <h2>Artifact overview</h2>
     <p>
-      <em>Replace this with: what the original artifact was, what course/term it came from,
-      and what it does.</em> For example — "This artifact is a [type of application] originally
-      built for [course name], which [does X]."
+      <em>The artifact I am including in my ePortfolio is the role-based access control (RBAC) structure I implemented for my veterinarian backend application,
+      an enhancement I developed from a previous coursework by adding user roles, JWT authentication, authorization middleware, and role-aware access to protected routes and resources.  
+      The artifact improved from a basic authenticated API, where any logged-in user had the same access
     </p>
 
     <h2>Why I selected this artifact</h2>
     <p>
-      <em>Replace with your reasoning — why this piece best demonstrates software design
-      and engineering skill, and what made it worth revisiting.</em>
-    </p>
-
-    <h2>Enhancement</h2>
-    <p>
-      <em>Describe specifically what you changed: refactored structure, applied a design
-      pattern, improved modularity, added error handling, improved documentation, etc.
-      Be concrete — name the pattern or technique.</em>
+      <em> I selected this item because RBAC was the main focus of my enhancement and it clearly demonstrates my software development skills in secure API design,
+      middleware implementation, database modeling with role enums, and organizing code into a maintainable structure with separate layers for authentication, authorization, services, and controllers.</em>
     </p>
 
     <div class="callout">
@@ -63,8 +56,9 @@
 
     <h2>Reflection</h2>
     <p>
-      <em>What did you learn making this enhancement? What was harder than expected? How
-      does this connect to your growth as a software engineer?</em>
+      <em> I learned that authentication and authorization are separate concerns, that middleware is the right place to enforce role rules, 
+      and that secure design means filtering database queries by role and ownerId—not just checking a token—but I also faced challenges such as deciding how many roles to include without overcomplicating the system, 
+      debugging 401 and 403 errors, and making sure each route had the correct role restrictions; overall, this enhancement helped me grow from implementing basic login features to designing a secure, role-driven backend architecture on my own.</em>
     </p>
 
     <div class="placeholder">SCREENSHOT / DIAGRAM — before vs. after structure</div>
